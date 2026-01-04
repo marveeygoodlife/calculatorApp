@@ -31,7 +31,7 @@ calculateBtn.addEventListener("click", () => {
             answer = divide(num1, num2);
             break;
     }
-    displayAnswer(formatNumber(answer), "3rem")
+    displayAnswer(formatNumber(answer), "1.5rem")
 })
 // handle decimal number
 function formatNumber(value) {
