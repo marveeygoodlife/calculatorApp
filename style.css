@@ -56,13 +56,16 @@ fieldset {
 input, select, button {
     display: block;
     margin-block: 10px;
-    padding-block: 10px;
-    padding-inline: 10px;
+    padding-block: 15px;
+    padding-inline: 15px;
     min-width: 250px;
     width: 100%;
     border: none;
     outline: none;
     cursor: pointer;
+}
+select {
+    border-radius: unset;
 }
 input:focus, select:focus {
     border: 1px solid rgba(0, 0, 255, 0.75);
