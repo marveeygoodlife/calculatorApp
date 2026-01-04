@@ -2,11 +2,9 @@
 
 //logic to perform math operation
 const calculateBtn = document.getElementById("calculateBtn");
-console.log(calculateBtn);
-
+ 
 calculateBtn.addEventListener("click", () => {
-    console.log("connected")
-    const num1 = Number(document.getElementById("num1").value.trim())
+     const num1 = Number(document.getElementById("num1").value.trim())
     const num2 = Number(document.getElementById("num2").value.trim());
     const operator = document.getElementById("operator").value;
 
@@ -27,20 +25,26 @@ calculateBtn.addEventListener("click", () => {
             break;
         case "divide":
             if (num2 === 0) {
-                return displayAnswer("Division by zero is not allowed. Try again.");
+                let text = document.getElementById("display");
+                return displayAnswer("Division by zero is not allowed. Try again.", "16px");
     }
             answer = divide(num1, num2);
             break;
     }
-    displayAnswer(formatNumber(answer))
+    displayAnswer(formatNumber(answer), "3rem")
 })
 // handle decimal number
 function formatNumber(value) {
     return Number.isInteger(value) ? value : value.toFixed(2);
 }
 // function to display calculation
-function displayAnswer(message) {
-    document.getElementById("display").textContent = message;
+function displayAnswer(message, fontSize) {
+    let element = document.getElementById("display");
+    element.textContent = message;
+
+    if (fontSize) {
+        element.style.fontSize = fontSize;
+    }
 }
 
 // function to reset UI

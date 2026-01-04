@@ -34,7 +34,7 @@ body::after {
 }
 h1 {
     color: white;
-    margin-block: 2rem;
+    margin-block: 16px;
 }
 main {
     z-index: 5;
@@ -87,10 +87,10 @@ button:hover {
 #display {
     text-align: center;
     background: transparent;
-    width: 100%;
+    width: auto;
+    height: auto;
     color: white;
     margin-block: 15px;
-    font-size: 1.1rem;
     font-weight:900;
     transition: width .3s ease-in;
 }
