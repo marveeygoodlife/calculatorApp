@@ -58,6 +58,7 @@ input, select, button {
     margin-block: 10px;
     padding-block: 10px;
     padding-inline: 10px;
+    min-width: 250px;
     width: 100%;
     border: none;
     outline: none;
@@ -87,6 +88,7 @@ button:hover {
     color: white;
     margin-block: 15px;
     font-size: 1.1rem;
+    transition: width .3s ease-in;
 }
 
 @media screen and (min-width:900px) {
