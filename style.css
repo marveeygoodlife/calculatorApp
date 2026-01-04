@@ -16,7 +16,7 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url("water&fire.jpg") center / cover;
+    background: url("water&fire.webp") center / cover;
     z-index: -10;
 }
 body::after {
@@ -34,6 +34,7 @@ body::after {
 }
 h1 {
     color: white;
+    margin-block: 2rem;
 }
 main {
     z-index: 5;
@@ -46,6 +47,7 @@ main {
     margin-block: 5rem;
 }
 fieldset {
+    border: transparent;
     margin: 0 auto;
     padding-block: 20px;
     padding-inline: 15px;
@@ -54,11 +56,12 @@ fieldset {
 input, select, button {
     display: block;
     margin-block: 10px;
-    padding-block: 8px;
+    padding-block: 10px;
     padding-inline: 10px;
     width: 100%;
     border: none;
     outline: none;
+    cursor: pointer;
 }
 input:focus, select:focus {
     border: 1px solid rgba(0, 0, 255, 0.75);
@@ -78,10 +81,14 @@ button:hover {
 }
 
 #display {
+    text-align: center;
     background: transparent;
     width: 100%;
-      
     color: white;
-    margin-bottom: 10px;
-    font-size: large;
+    margin-block: 15px;
+    font-size: 1.1rem;
+}
+
+@media screen and (min-width:900px) {
+  fieldset  {min-width: 400px;}
 }
