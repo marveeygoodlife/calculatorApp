@@ -91,6 +91,7 @@ button:hover {
     color: white;
     margin-block: 15px;
     font-size: 1.1rem;
+    font-weight:900;
     transition: width .3s ease-in;
 }
 
