@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator App</title>
+</head>
+<body>
+    <main>
+        <h1>Calculator App</h1>
+        <section class="hero">
+            <div id="heroContent">
+                <p id="display"></p>
+                <fieldset>
+                      <label> 
+                <input type="number" name="num1" id="num1" placeholder="Enter first number">
+                </label>
+                <label> 
+                <input type="number" name="num2" id="num2" placeholder="Enter second number">
+                </label>
+                <select name="operator" id="operator" title="operator">
+                    <option value="add">Add (+)</option>
+                    <option value="subtract">Subtract (-)</option>
+                    <option value="multiply">Multiply (*)</option>
+                    <option value="divide">Divide (/)</option>
+                </select>
+<div class="btns">
+    <button type="button" id="calculateBtn"> Calculate</button>
+    <button type="submit" id="clearBtn"> Clear</button>
+</div>
+                </fieldset>
+              
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
